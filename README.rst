@@ -1,14 +1,14 @@
-|pypi| |travis| |codecov| |downloads|
+|pypi| |actions| |codecov| |downloads|
 
 edc_crf
---------
+-------
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc_crf.svg
-    :target: https://pypi.python.org/pypi/edc_crf
-    
-.. |travis| image:: https://travis-ci.com/clinicedc/edc_crf.svg?branch=develop
-    :target: https://travis-ci.com/clinicedc/edc_crf
-    
+  :target: https://pypi.python.org/pypi/edc_crf
+
+.. |actions| image:: https://github.com/clinicedc/edc-crf/workflows/build/badge.svg?branch=develop
+  :target: https://github.com/clinicedc/edc-crf/actions?query=workflow:build
+
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc_crf/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc_crf
 
