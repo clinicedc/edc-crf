@@ -4,7 +4,7 @@ edc_crf
 -------
 
 .. |pypi| image:: https://img.shields.io/pypi/v/edc_crf.svg
-    :target: https://pypi.python.org/pypi/edc_crf
+  :target: https://pypi.python.org/pypi/edc_crf
 
 .. |actions| image:: https://github.com/clinicedc/edc-crf/workflows/build/badge.svg?branch=develop
   :target: https://github.com/clinicedc/edc-crf/actions?query=workflow:build
