@@ -17,6 +17,7 @@ DEFAULT_SETTINGS = DefaultTestSettings(
     BASE_DIR=base_dir,
     APP_NAME=app_name,
     ETC_DIR=os.path.join(base_dir, app_name, "tests", "etc"),
+    SUBJECT_VISIT_MODEL="visit_schedule_app.subjectvisit",
     INSTALLED_APPS=[
         "django.contrib.admin",
         "django.contrib.auth",
@@ -57,9 +58,7 @@ def main():
     django.setup()
     tags = [t.split("=")[1] for t in sys.argv if t.startswith("--tag")]
     failfast = True if [t for t in sys.argv if t == "--failfast"] else False
-    failures = DiscoverRunner(failfast=failfast, tags=tags).run_tests(
-        [f"{app_name}.tests"]
-    )
+    failures = DiscoverRunner(failfast=failfast, tags=tags).run_tests([f"{app_name}.tests"])
     sys.exit(bool(failures))
 
 
