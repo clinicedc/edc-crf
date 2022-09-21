@@ -11,16 +11,10 @@ to validate a few general conditions. Most of these conditions are checked
 relative to the ``report_datetime`` of the CRF data being submitted. Some examples
 are:
 
-* that a participant is consented and that their consent is still valid
-on the ``report_datetime``;
-* that the CRF ``report_datetime`` makes sense relative to the covering
-visit report ``report_datetime``;
-* that the participant is enrolled to the schedule (onschedule) on or after the
-``report_datetime`` and has not been taken off the schedule (offschedule) on
-or before the ``report_datetime``;
-* that the participant has not been taken off study on or before the
-``report_datetime``.
-
+* that a participant is consented and that their consent is still valid on the ``report_datetime``;
+* that the CRF ``report_datetime`` makes sense relative to the covering visit report ``report_datetime``;
+* that the participant is enrolled to the schedule (onschedule) on or after the ``report_datetime`` and has not been taken off the schedule (offschedule) on or before the ``report_datetime``;
+* that the participant has not been taken off study on or before the ``report_datetime``.
 
 CRF forms
 +++++++++
@@ -28,10 +22,8 @@ CRF forms
 The ``CrfModelFormMixin`` is used for all CRF modelforms. With this single
 mixin the form:
 
-* Checks for the consent relative to report datetime
-  and this schedule (edc_consent);
-* checks if participant is on/off schedule relative to report
-  datetime and this schedule (edc_visit_schedule);
+* Checks for the consent relative to report datetime and this schedule (edc_consent);
+* checks if participant is on/off schedule relative to report datetime and this schedule (edc_visit_schedule);
 * validates subject_visit report datetime (edc_visit_tracking);
 * checks if participant is offstudy relative to report datetime (edc_offstudy).
 
@@ -105,3 +97,4 @@ to catch these exceptions on the form where the user can respond.
 .. _edc_visit_schedule: https://github.com/clinicedc/edc-visit-schedule
 .. _edc_visit_tracking: https://github.com/clinicedc/edc-visit-tracking
 .. _edc_offstudy: https://github.com/clinicedc/edc-offstudy
+
