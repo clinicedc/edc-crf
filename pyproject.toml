@@ -27,6 +27,12 @@ source = ["edc_crf"]
 show_missing = true
 skip_covered = true
 omit = ["requirements.txt"]
+exclude_lines = [
+    "@abstractmethod",
+    "@abc.abstractmethod",
+    "pragma: no cover",
+    "if TYPE_CHECKING:",
+]
 
 [tool.tox]
 legacy_tox_ini = """
