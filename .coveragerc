@@ -2,3 +2,9 @@
 include = edc_crf/*
 omit = edc_crf/tests/*,edc_crf/migrations/*,edc_crf/wsgi.py
 branch = 1
+[report]
+exclude_lines =
+  @abstractmethod
+  @abc.abstractmethod
+  pragma: no cover
+  if TYPE_CHECKING:
