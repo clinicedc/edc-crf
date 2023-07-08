@@ -1,0 +1,4 @@
+0.3.43
+------
+- change default order of model managers
+- always get `site` FK from related visit model instance
