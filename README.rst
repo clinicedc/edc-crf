@@ -84,8 +84,8 @@ to catch these exceptions on the form where the user can respond.
 .. |pypi| image:: https://img.shields.io/pypi/v/edc_crf.svg
   :target: https://pypi.python.org/pypi/edc_crf
 
-.. |actions| image:: https://github.com/clinicedc/edc-crf/workflows/build/badge.svg?branch=develop
-  :target: https://github.com/clinicedc/edc-crf/actions?query=workflow:build
+.. |actions| image:: https://github.com/clinicedc/edc-crf/actions/workflows/build.yml/badge.svg
+  :target: https://github.com/clinicedc/edc-crf/actions/workflows/build.yml
 
 .. |codecov| image:: https://codecov.io/gh/clinicedc/edc_crf/branch/develop/graph/badge.svg
   :target: https://codecov.io/gh/clinicedc/edc_crf
