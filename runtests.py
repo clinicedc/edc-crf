@@ -15,8 +15,8 @@ project_settings = DefaultTestSettings(
     SILENCED_SYSTEM_CHECKS=[
         "edc_consent.E001",
         "sites.E101",
-        "edc_navbar.002",
-        "edc_navbar.003",
+        "edc_navbar.E002",
+        "edc_navbar.E003",
     ],
     SUBJECT_VISIT_MODEL="edc_visit_tracking.subjectvisit",
     SUBJECT_VISIT_MISSED_MODEL="visit_schedule_app.subjectvisitmissed",
