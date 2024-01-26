@@ -12,6 +12,12 @@ project_settings = DefaultTestSettings(
     BASE_DIR=base_dir,
     APP_NAME=app_name,
     ETC_DIR=str(base_dir / app_name / "tests" / "etc"),
+    SILENCED_SYSTEM_CHECKS=[
+        "edc_consent.E001",
+        "sites.E101",
+        "edc_navbar.002",
+        "edc_navbar.003",
+    ],
     SUBJECT_VISIT_MODEL="edc_visit_tracking.subjectvisit",
     SUBJECT_VISIT_MISSED_MODEL="visit_schedule_app.subjectvisitmissed",
     INSTALLED_APPS=[
@@ -29,6 +35,8 @@ project_settings = DefaultTestSettings(
         "edc_action_item.apps.AppConfig",
         "edc_appointment.apps.AppConfig",
         "edc_consent.apps.AppConfig",
+        "edc_data_manager.apps.AppConfig",
+        "edc_form_runners.apps.AppConfig",
         "edc_device.apps.AppConfig",
         "edc_export.apps.AppConfig",
         "edc_facility.apps.AppConfig",
@@ -43,7 +51,9 @@ project_settings = DefaultTestSettings(
         "edc_visit_schedule.apps.AppConfig",
         "visit_schedule_app.apps.AppConfig",
         "edc_visit_tracking.apps.AppConfig",
+        "edc_auth.apps.AppConfig",
         "edc_crf.apps.AppConfig",
+        "edc_appconfig.apps.AppConfig",
     ],
     add_dashboard_middleware=True,
 ).settings
