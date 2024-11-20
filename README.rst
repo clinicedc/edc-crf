@@ -97,4 +97,3 @@ to catch these exceptions on the form where the user can respond.
 .. _edc_visit_schedule: https://github.com/clinicedc/edc-visit-schedule
 .. _edc_visit_tracking: https://github.com/clinicedc/edc-visit-tracking
 .. _edc_offstudy: https://github.com/clinicedc/edc-offstudy
-
